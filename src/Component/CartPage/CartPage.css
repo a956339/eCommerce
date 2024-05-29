@@ -1,0 +1,157 @@
+.Cart_Main_Cointainer {
+  padding: 40px;
+  display: flex;
+}
+
+.Cart_Cointainer_Left {
+  width: 68vw;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  justify-content: flex-start;
+}
+
+.Cart_card {
+  width: 30vh;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.Cart_cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.Cart_cardImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.Cart_Product_Name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.Cart_Price {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Cart_Price p {
+  font-weight: 700;
+}
+
+.Cart_Quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.Cart_Quantity p {
+  font-size: 18px;
+  font-weight: 800;
+}
+.cartPlus {
+  color: black;
+}
+.button_Cover {
+  padding: 6px 4px;
+  width: 2vw;
+  background-color: aqua;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cart_Cointainer_Right {
+  border-radius: 10px;
+  width: 26vw;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 60vh;
+}
+.Price_container p {
+  padding: 15px;
+  font-weight: 600;
+  color: #898989;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Total p {
+  font-weight: bold;
+}
+
+.Order_button_Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_Box {
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb641b;
+}
+.button_Box p {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Cart_Main_Cointainer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .Cart_Cointainer_Right {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+
+  .Cart_Cointainer_Left {
+    width: 92vw;
+  }
+  .Cart_card {
+    width: 17vh;
+  }
+  .button_Cover {
+    width: 3vw;
+  }
+
+  .cartPlus {
+    color: black;
+    font-size: 10px;
+  }
+
+  .fa-trash {
+    color: black;
+    font-size: 10px;
+  }
+
+  .Cart_Cointainer_Right {
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    padding: 8px 0px;
+  }
+
+  .button_Box {
+    width: 60vw;
+  }
+}
